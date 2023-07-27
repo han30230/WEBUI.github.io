@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>우리들만의 Chat Bot 라리봇마 싹다 써!!!</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <style>
-    #chat-container {
-      width: 500px;
-      height: 500px;
-      border: 1px solid black;
-    }
-    #chat-output {
-      height: 400px;
-      overflow: scroll;
-    }
-  </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>로봇 모니터링</title>
 </head>
 <body>
-  <div id="chat-container">
-    <div id="chat-output"></div>
-    <input type="text" id="chat-input">
-    <button id="chat-submit">Submit</button>
-    <button id="chat-history">History</button>
-  </div>
-  <script>
-    var chatHistory = [];
-    $("#chat-submit").click(function() {
-      var message = $("#chat-input").val();
-      $("#chat-output").append("<p>You: " + message + "</p>");
-      chatHistory.push("You: " + message);
-      $("#chat-input").val("");
-    });
-    $("#chat-history").click(function() {
-      alert(chatHistory.join("\n"));
-    });
-  </script>
+    <div id="navbar">
+        <ul>
+            <li><a href="#"><img src="home_icon.png" alt="Home"> 홈</a></li>
+            <li><a href="#"><img src="work_icon.png" alt="Work"> 작업</a></li>
+            <li><a href="#"><img src="robot_icon.png" alt="Robot"> 로봇</a></li>
+            <li><a href="#"><img src="map_icon.png" alt="Map"> 지도</a></li>
+            <li><a href="#"><img src="admin_icon.png" alt="Admin"> 관리자</a></li>
+            <li><a href="#"><img src="user_icon.png" alt="User"> 사용자</a></li>
+            <li><a href="#"><img src="info_icon.png" alt="Info"> 정보</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <!-- 내용 부분 -->
+    </div>
 </body>
 </html>
