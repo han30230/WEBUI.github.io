@@ -1,9 +1,35 @@
-#chat-container {
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
-  }
-  #chat-output {
-    height: 400px;
-    overflow: scroll;
-  }
+#navbar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #f8f9fa;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#navbar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li a img {
+    margin-right: 10px;
+}
+
+#content {
+    margin-left: 210px;
+    padding: 20px;
+}
+
+
